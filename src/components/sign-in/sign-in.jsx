@@ -55,17 +55,13 @@ class SignIn extends Component {
             minLength="8"
             required
           />
+          <div className="buttons">
+            <CustomButton type="submit">Submit Form</CustomButton>
 
-          <CustomButton type="submit">Submit Form</CustomButton>
-          <CustomButton
-            onClick={signInWithGoogle}
-            style={{
-              backgroundColor: "blue",
-              marginTop: "5px",
-            }}
-          >
-            Sign In with Google
-          </CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGooglesSignIn>
+              Sign In with Google
+            </CustomButton>
+          </div>
         </form>
       </div>
     );
